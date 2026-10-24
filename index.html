@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bharathkumar M | Portfolio — College Student & Aspiring Developer</title>
+  <meta name="description" content="Personal portfolio of Bharathkumar M, a second-year college student at KG College of Arts and Science and aspiring software & web developer." />
+  <meta name="keywords" content="Bharathkumar M, Developer Portfolio, KG College of Arts and Science, Web Development, C Programming, HTML, CSS, JavaScript" />
+  <meta name="author" content="Bharathkumar M" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+
+  <!-- Interactive Background Canvas (Lightweight Particles) -->
+  <canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+  <!-- ==================== STICKY NAVIGATION BAR ==================== -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Bharathkumar M Portfolio Home">
+        <span class="logo-icon"><i class="fa-solid fa-terminal"></i></span>
+        <span class="logo-text">Bharathkumar<span class="highlight">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active"><span class="nav-idx">01.</span>Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><span class="nav-idx">02.</span>About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link"><span class="nav-idx">03.</span>Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><span class="nav-idx">04.</span>Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><span class="nav-idx">05.</span>Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><span class="nav-idx">06.</span>Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button type="button" class="btn btn-cyber-sm" id="quickResumeBtn">
+            <i class="fa-solid fa-file-code"></i>
+            <span>Resume</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Hamburger -->
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar bar-top"></span>
+        <span class="bar bar-mid"></span>
+        <span class="bar bar-bot"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main id="main-content">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          
+          <div class="status-chip">
+            <span class="status-pulse"></span>
+            <span class="chip-text">Available for College Projects &amp; Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br />
+            <span class="text-electric-gradient">Bharathkumar M</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="code-bracket">&lt;</span>
+            <p class="hero-subtitle">Second-Year College Student | Aspiring Developer</p>
+            <span class="code-bracket">/&gt;</span>
+          </div>
+
+          <p class="hero-bio">
+            Second-year student at <strong>KG College of Arts and Science</strong> passionate about computer programming, 
+            modern web development, and engineering robust software solutions. Focused on mastering core fundamentals and building real-world practical applications.
+          </p>
+
+          <!-- Quick Terminal Spec Tag -->
+          <div class="hero-terminal-pill">
+            <i class="fa-solid fa-location-dot"></i> Coimbatore, TN &bull; KG College of Arts and Science &bull; 2nd Year
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary-glow">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button type="button" class="btn btn-glass-cyan" id="openResumeModalBtn">
+              <i class="fa-solid fa-download"></i>
+              <span>Download Resume</span>
+            </button>
+            <a href="#contact" class="btn btn-glass-simple">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-social-row">
+            <span class="social-prefix">// Connect:</span>
+            <div class="social-links-list">
+              <a href="https://www.linkedin.com/in/bharathkumar-marimuthu-516b033a7/" target="_blank" rel="noopener noreferrer" class="social-glass-btn" aria-label="Bharathkumar's LinkedIn Profile" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span class="social-text">LinkedIn</span>
+              </a>
+              <a href="mailto:bharathm123123@gmail.com" class="social-glass-btn" aria-label="Send email to Bharathkumar" title="Email: bharathm123123@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="social-text">Email</span>
+              </a>
+              <a href="tel:9042573764" class="social-glass-btn" aria-label="Call Bharathkumar" title="Phone: +91 9042573764">
+                <i class="fa-solid fa-phone"></i>
+                <span class="social-text">+91 9042573764</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Photo Column (Using Uploaded Real Photo in Rounded Frame) -->
+        <div class="hero-photo-column">
+          <div class="profile-card-container">
+            
+            <!-- Ambient Cybernetic Glow Effects -->
+            <div class="profile-glow-ring glow-cyan"></div>
+            <div class="profile-glow-ring glow-blue"></div>
+
+            <!-- Stylized Rounded Frame: Preserves full face, head & upper body -->
+            <div class="profile-frame">
+              <img 
+                src="profile.jpg" 
+                alt="Bharathkumar M — Second-Year College Student and Aspiring Developer" 
+                class="profile-image" 
+                id="profilePhoto"
+              />
+              
+              <!-- Subtle Cybernetic Corner Tech Decors -->
+              <div class="frame-corner corner-tl"></div>
+              <div class="frame-corner corner-tr"></div>
+              <div class="frame-corner corner-bl"></div>
+              <div class="frame-corner corner-br"></div>
+
+              <!-- Fallback Placeholder (if image fails to load) -->
+              <div class="photo-fallback" id="photoFallback" style="display: none;">
+                <i class="fa-solid fa-user-tie"></i>
+                <span>Bharathkumar M</span>
+              </div>
+            </div>
+
+            <!-- Floating Glassmorphic Badges -->
+            <div class="floating-glass-badge badge-top-right">
+              <div class="badge-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="badge-text">
+                <span class="badge-label">Role Focus</span>
+                <span class="badge-val">Aspiring Developer</span>
+              </div>
+            </div>
+
+            <div class="floating-glass-badge badge-bottom-left">
+              <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="badge-text">
+                <span class="badge-label">Academic Year</span>
+                <span class="badge-val">2nd Year &bull; KG CAS</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="section-badge">// 02. PROFILE OVERVIEW</span>
+          <h2 class="section-title">About <span class="text-electric-gradient">Me</span></h2>
+          <p class="section-subtitle">Academic foundations, technical mindset, and career aspirations in software engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Primary Glass Statement Card -->
+          <div class="glass-card about-main-card">
+            <div class="card-glass-header">
+              <span class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </span>
+              <span class="card-terminal-title">bharathkumar@portfolio: ~/about.txt</span>
+            </div>
+
+            <div class="about-quote-container">
+              <i class="fa-solid fa-quote-left quote-mark"></i>
+              <p class="about-lead-quote">
+                Hi, I'm <strong>Bharathkumar M</strong>, a second-year student at <strong>KG College of Arts and Science</strong>. 
+                I am interested in technology, programming, and web development. I enjoy learning new skills, improving my problem-solving abilities, and creating useful projects. 
+                My goal is to develop my technical knowledge and build a successful career in the IT industry.
+              </p>
+            </div>
+
+            <div class="about-bullets">
+              <div class="bullet-item">
+                <div class="bullet-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div class="bullet-text">
+                  <h4>Target Career Goal</h4>
+                  <p>Building strong fundamentals in software development and contributing actively to innovative IT teams.</p>
+                </div>
+              </div>
+
+              <div class="bullet-item">
+                <div class="bullet-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="bullet-text">
+                  <h4>Practical Engineering</h4>
+                  <p>Transforming classroom theories and algorithmic logic into working websites and management systems.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards Grid -->
+          <div class="about-highlights-grid">
+            <div class="glass-card feature-glass-box">
+              <div class="feature-icon-cyan"><i class="fa-solid fa-code"></i></div>
+              <h3>Web &amp; Software Interest</h3>
+              <p>Passionate about crafting dynamic user interfaces, structuring responsive layouts, and exploring modern web standards.</p>
+            </div>
+
+            <div class="glass-card feature-glass-box">
+              <div class="feature-icon-cyan"><i class="fa-solid fa-brain"></i></div>
+              <h3>Problem-Solving Mindset</h3>
+              <p>Analyzing computing problems systematically, breaking them into manageable components, and debugging patiently.</p>
+            </div>
+
+            <div class="glass-card feature-glass-box">
+              <div class="feature-icon-cyan"><i class="fa-solid fa-users-viewfinder"></i></div>
+              <h3>Collaborative Spirit</h3>
+              <p>Thriving in peer groups, actively sharing knowledge, accepting feedback constructively, and valuing team outcomes.</p>
+            </div>
+
+            <div class="glass-card feature-glass-box">
+              <div class="feature-icon-cyan"><i class="fa-solid fa-bolt-lightning"></i></div>
+              <h3>Quick Learning</h3>
+              <p>Swift in grasping programming syntax, adopting modern development workflows, and experimenting with new tech stacks.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="section-badge">// 03. ACADEMIC JOURNEY</span>
+          <h2 class="section-title">My <span class="text-electric-gradient">Education</span></h2>
+          <p class="section-subtitle">Academic foundations fostering analytical thinking and technical problem-solving.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- College Card -->
+          <div class="glass-card timeline-card highlight-card">
+            <div class="timeline-badge-live">
+              <span class="live-dot"></span> Currently Pursuing
+            </div>
+
+            <div class="timeline-header">
+              <div class="timeline-icon"><i class="fa-solid fa-building-columns"></i></div>
+              <div>
+                <h3 class="institution-title">KG College of Arts and Science</h3>
+                <span class="timeline-period"><i class="fa-solid fa-calendar-check"></i> Second Year Undergraduate Studies</span>
+              </div>
+            </div>
+
+            <div class="editable-banner">
+              <div class="editable-row">
+                <span class="edit-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                <span class="edit-placeholder">[Degree Name - e.g., B.Sc. / BCA / B.Tech]</span>
+              </div>
+              <div class="editable-row">
+                <span class="edit-label"><i class="fa-solid fa-layer-group"></i> Department:</span>
+                <span class="edit-placeholder">[Department - e.g., Computer Science / Information Technology]</span>
+              </div>
+            </div>
+
+            <p class="timeline-desc">
+              Engaging in core academic coursework covering computer programming fundamentals, computational thinking, algorithms, and applied technology.
+            </p>
+
+            <div class="timeline-chips">
+              <span class="tech-chip"><i class="fa-solid fa-clock"></i> Academic Year: 2nd Year</span>
+              <span class="tech-chip"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</span>
+              <span class="tech-chip editable-note"><i class="fa-solid fa-pen"></i> Degree &amp; Dept editable in index.html</span>
+            </div>
+          </div>
+
+          <!-- School Card -->
+          <div class="glass-card timeline-card">
+            <div class="timeline-badge-completed">
+              <i class="fa-solid fa-check"></i> Completed
+            </div>
+
+            <div class="timeline-header">
+              <div class="timeline-icon school-icon"><i class="fa-solid fa-school"></i></div>
+              <div>
+                <h3 class="institution-title">Swathanthara Higher Secondary School</h3>
+                <span class="timeline-period"><i class="fa-solid fa-location-dot"></i> Athipalayam, Vaiyampalayam</span>
+              </div>
+            </div>
+
+            <div class="editable-banner">
+              <div class="editable-row">
+                <span class="edit-label"><i class="fa-solid fa-map-pin"></i> School Location:</span>
+                <span class="edit-value">Athipalayam, Vaiyampalayam</span>
+              </div>
+              <div class="editable-row">
+                <span class="edit-label"><i class="fa-solid fa-book-open"></i> Foundation:</span>
+                <span class="edit-value">Higher Secondary Curriculum</span>
+              </div>
+            </div>
+
+            <p class="timeline-desc">
+              Completed higher secondary school education with strong emphasis on sciences, mathematics, and logical comprehension.
+            </p>
+
+            <div class="timeline-chips">
+              <span class="tech-chip"><i class="fa-solid fa-map-pin"></i> Athipalayam, Vaiyampalayam</span>
+              <span class="tech-chip"><i class="fa-solid fa-award"></i> Schooling Completed</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="section-badge">// 04. TECHNICAL &amp; PROFESSIONAL ARSENAL</span>
+          <h2 class="section-title">Skills &amp; <span class="text-electric-gradient">Abilities</span></h2>
+          <p class="section-subtitle">
+            Core foundations and growing competencies. Non-inflated ratings representing hands-on college coursework.
+          </p>
+        </div>
+
+        <div class="skills-columns-grid">
+
+          <!-- Web Development Column -->
+          <div class="glass-card skill-group-card">
+            <div class="group-heading">
+              <div class="group-icon-cyan"><i class="fa-solid fa-globe"></i></div>
+              <div>
+                <h3>Web Development</h3>
+                <span>Front-end building blocks</span>
+              </div>
+            </div>
+
+            <div class="skills-deck">
+              <!-- HTML -->
+              <div class="cyber-skill-card">
+                <div class="skill-header">
+                  <div class="skill-symbol html-color"><i class="fa-brands fa-html5"></i></div>
+                  <div class="skill-meta">
+                    <span class="name">HTML</span>
+                    <span class="tier">Core Foundation</span>
+                  </div>
+                </div>
+                <div class="neon-progress">
+                  <div class="neon-fill" style="width: 78%;"></div>
+                </div>
+                <p class="skill-note">Semantic structure, modern elements, forms &amp; accessibility.</p>
+              </div>
+
+              <!-- CSS -->
+              <div class="cyber-skill-card">
+                <div class="skill-header">
+                  <div class="skill-symbol css-color"><i class="fa-brands fa-css3-alt"></i></div>
+                  <div class="skill-meta">
+                    <span class="name">CSS</span>
+                    <span class="tier">Styling &amp; Layouts</span>
+                  </div>
+                </div>
+                <div class="neon-progress">
+                  <div class="neon-fill" style="width: 72%;"></div>
+                </div>
+                <p class="skill-note">Responsive Flexbox, CSS Grid, media queries &amp; modern styling.</p>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="cyber-skill-card">
+                <div class="skill-header">
+                  <div class="skill-symbol js-color"><i class="fa-brands fa-square-js"></i></div>
+                  <div class="skill-meta">
+                    <span class="name">JavaScript</span>
+                    <span class="tier">Interactive Logic</span>
+                  </div>
+                </div>
+                <div class="neon-progress">
+                  <div class="neon-fill" style="width: 62%;"></div>
+                </div>
+                <p class="skill-note">DOM manipulation, event handling, logic loops &amp; functions.</p>
+              </div>
+
+              <!-- Basic Web Development -->
+              <div class="cyber-skill-card">
+                <div class="skill-header">
+                  <div class="skill-symbol web-color"><i class="fa-solid fa-laptop-code"></i></div>
+                  <div class="skill-meta">
+                    <span class="name">Basic Web Development</span>
+                    <span class="tier">Practical Integration</span>
+                  </div>
+                </div>
+                <div class="neon-progress">
+                  <div class="neon-fill" style="width: 70%;"></div>
+                </div>
+                <p class="skill-note">Building functional static &amp; interactive web projects.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming & Logic Column -->
+          <div class="glass-card skill-group-card">
+            <div class="group-heading">
+              <div class="group-icon-cyan"><i class="fa-solid fa-terminal"></i></div>
+              <div>
+                <h3>Programming &amp; Logic</h3>
+                <span>Procedural &amp; algorithmic thinking</span>
+              </div>
+            </div>
+
+            <div class="skills-deck">
+              <!-- C Programming -->
+              <div class="cyber-skill-card">
+                <div class="skill-header">
+                  <div class="skill-symbol c-color"><i class="fa-solid fa-c"></i></div>
+                  <div class="skill-meta">
+                    <span class="name">C Programming</span>
+                    <span class="tier">Procedural Fundamentals</span>
+                  </div>
+                </div>
+                <div class="neon-progress">
+                  <div class="neon-fill" style="width: 68%;"></div>
+                </div>
+                <p class="skill-note">Variables, control flows, arrays, functions &amp; memory concepts.</p>
+              </div>
+
+              <!-- Problem-Solving -->
+              <div class="cyber-skill-card">
+                <div class="skill-header">
+                  <div class="skill-symbol solve-color"><i class="fa-solid fa-puzzle-piece"></i></div>
+                  <div class="skill-meta">
+                    <span class="name">Problem-Solving</span>
+                    <span class="tier">Analytical Reasoning</span>
+                  </div>
+                </div>
+                <div class="neon-progress">
+                  <div class="neon-fill" style="width: 74%;"></div>
+                </div>
+                <p class="skill-note">Algorithm decomposition, structured thinking &amp; debugging.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional & Soft Skills Column -->
+          <div class="glass-card skill-group-card">
+            <div class="group-heading">
+              <div class="group-icon-cyan"><i class="fa-solid fa-user-astronaut"></i></div>
+              <div>
+                <h3>Soft Strengths</h3>
+                <span>Workplace &amp; teamwork traits</span>
+              </div>
+            </div>
+
+            <div class="skills-deck">
+              <!-- Teamwork -->
+              <div class="cyber-skill-card">
+                <div class="skill-header">
+                  <div class="skill-symbol team-color"><i class="fa-solid fa-people-group"></i></div>
+                  <div class="skill-meta">
+                    <span class="name">Teamwork</span>
+                    <span class="tier">Collaboration</span>
+                  </div>
+                </div>
+                <div class="neon-progress">
+                  <div class="neon-fill" style="width: 82%;"></div>
+                </div>
+                <p class="skill-note">Collaborating constructively, meeting group goals &amp; peer support.</p>
+              </div>
+
+              <!-- Communication -->
+              <div class="cyber-skill-card">
+                <div class="skill-header">
+                  <div class="skill-symbol comm-color"><i class="fa-solid fa-comments"></i></div>
+                  <div class="skill-meta">
+                    <span class="name">Communication</span>
+                    <span class="tier">Interpersonal Skills</span>
+                  </div>
+                </div>
+                <div class="neon-progress">
+                  <div class="neon-fill" style="width: 76%;"></div>
+                </div>
+                <p class="skill-note">Clear verbal &amp; written articulation of project ideas and progress.</p>
+              </div>
+
+              <!-- Quick Learning -->
+              <div class="cyber-skill-card">
+                <div class="skill-header">
+                  <div class="skill-symbol learn-color"><i class="fa-solid fa-rocket"></i></div>
+                  <div class="skill-meta">
+                    <span class="name">Quick Learning</span>
+                    <span class="tier">Adaptability</span>
+                  </div>
+                </div>
+                <div class="neon-progress">
+                  <div class="neon-fill" style="width: 86%;"></div>
+                </div>
+                <p class="skill-note">Fast absorption of technical concepts, documentation &amp; feedback.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skills-notice-box">
+          <i class="fa-solid fa-terminal"></i>
+          <span>All skills are presented realistically without unverified advanced claims, and can be edited anytime as your knowledge grows.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="section-badge">// 05. FEATURED WORK &amp; CONCEPTS</span>
+          <h2 class="section-title">My <span class="text-electric-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real-world software and web solutions under active conceptualization and development.</p>
+        </div>
+
+        <div class="projects-layout">
+
+          <!-- Featured Project: Digital Wallet and Balance Management System -->
+          <div class="glass-card project-master-card">
+            
+            <div class="project-banner-header">
+              <div class="status-tags-group">
+                <span class="tag-cyber"><i class="fa-solid fa-shield-halved"></i> Project Concept</span>
+                <span class="tag-amber"><i class="fa-solid fa-pen-to-square"></i> Editable Implementation Details</span>
+              </div>
+              <h3 class="master-project-title">Digital Wallet and Balance Management System</h3>
+            </div>
+
+            <div class="project-main-content">
+              <p class="master-project-desc">
+                A project concept for managing a digital wallet balance and tracking transactions. 
+                Designed to provide an intuitive, responsive user experience for recording finances, verifying account stability, and inspecting transaction histories.
+              </p>
+
+              <!-- Potential Features Box -->
+              <div class="features-box-cyber">
+                <h4 class="box-heading"><i class="fa-solid fa-list-check"></i> Potential Features:</h4>
+                <div class="features-cyber-grid">
+                  <div class="feat-item">
+                    <div class="feat-bullet"><i class="fa-solid fa-wallet"></i></div>
+                    <div><strong>View wallet balance:</strong> Real-time overview of current available funds.</div>
+                  </div>
+                  <div class="feat-item">
+                    <div class="feat-bullet"><i class="fa-solid fa-circle-plus"></i></div>
+                    <div><strong>Add money:</strong> Simulated balance top-up with immediate account credit.</div>
+                  </div>
+                  <div class="feat-item">
+                    <div class="feat-bullet"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <div><strong>Track transactions:</strong> Categorized logs of debits, credits, and spending.</div>
+                  </div>
+                  <div class="feat-item">
+                    <div class="feat-bullet"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <div><strong>View transaction history:</strong> Chronological ledger of all historical activity.</div>
+                  </div>
+                  <div class="feat-item">
+                    <div class="feat-bullet"><i class="fa-solid fa-sliders"></i></div>
+                    <div><strong>Manage balance information:</strong> Account balance safeguards and limits management.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tech Stack Specification (Confirmed vs Pending) -->
+              <div class="tech-spec-container">
+                <div class="tech-spec-title">
+                  <i class="fa-solid fa-microchip"></i>
+                  <span>Technologies Used:</span>
+                </div>
+                <div class="tech-chips-row">
+                  <span class="chip-pending"><i class="fa-solid fa-hourglass-half"></i> To be confirmed upon implementation</span>
+                  <span class="chip-suggested">Suggested: HTML, CSS, JavaScript / C</span>
+                </div>
+                <p class="tech-clarification">
+                  * As instructed, technologies will be finalized once your build is completed. You can easily edit these tags in <code>index.html</code>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Project Action Controls -->
+            <div class="project-action-row">
+              <button type="button" class="btn btn-primary-glow" id="openProjectModalBtn">
+                <i class="fa-solid fa-play"></i>
+                <span>Launch Interactive Prototype &amp; Demo</span>
+              </button>
+              <button type="button" class="btn btn-glass-simple" id="projectDetailsQuickBtn">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Architecture Roadmap</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Secondary Card: Upcoming College Projects -->
+          <div class="glass-card upcoming-card">
+            <div class="upcoming-inner">
+              <div class="upcoming-radar-icon">
+                <i class="fa-solid fa-code-fork"></i>
+              </div>
+              <h3>Upcoming Practical Projects</h3>
+              <p>
+                Currently architecting additional projects in Web Applications and C Programming algorithms. 
+                New projects will be documented here as development milestones are achieved!
+              </p>
+              <div class="upcoming-status-pills">
+                <span class="pill-glow"><i class="fa-solid fa-flask"></i> College Lab Practical</span>
+                <span class="pill-glow"><i class="fa-solid fa-lightbulb"></i> Ideation Phase</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ME SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="section-badge">// 06. GET IN TOUCH</span>
+          <h2 class="section-title">Contact <span class="text-electric-gradient">Me</span></h2>
+          <p class="section-subtitle">Let's connect for academic projects, internship opportunities, or professional inquiries.</p>
+        </div>
+
+        <div class="contact-cyber-grid">
+          
+          <!-- Contact Channels Column -->
+          <div class="contact-channels-col">
+            
+            <div class="glass-card contact-person-card">
+              <div class="person-header">
+                <div class="person-avatar-mini">
+                  <img src="profile.jpg" alt="Bharathkumar M" />
+                </div>
+                <div>
+                  <h3 class="person-name">Bharathkumar M</h3>
+                  <span class="person-sub">Second-Year College Student | Aspiring Developer</span>
+                </div>
+              </div>
+              <p class="person-location"><i class="fa-solid fa-university"></i> KG College of Arts and Science &bull; Coimbatore</p>
+            </div>
+
+            <div class="channels-stack">
+              <!-- Email Card -->
+              <a href="mailto:bharathm123123@gmail.com" class="glass-card channel-link-card">
+                <div class="channel-icon icon-email"><i class="fa-solid fa-envelope"></i></div>
+                <div class="channel-info">
+                  <span class="channel-label">Email Address</span>
+                  <strong class="channel-val">bharathm123123@gmail.com</strong>
+                  <span class="channel-action">Click to send direct email &rarr;</span>
+                </div>
+              </a>
+
+              <!-- Phone Card -->
+              <a href="tel:9042573764" class="glass-card channel-link-card">
+                <div class="channel-icon icon-phone"><i class="fa-solid fa-phone"></i></div>
+                <div class="channel-info">
+                  <span class="channel-label">Mobile Phone</span>
+                  <strong class="channel-val">+91 9042573764</strong>
+                  <span class="channel-action">Click to place call &rarr;</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/bharathkumar-marimuthu-516b033a7/" target="_blank" rel="noopener noreferrer" class="glass-card channel-link-card">
+                <div class="channel-icon icon-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="channel-info">
+                  <span class="channel-label">LinkedIn Profile</span>
+                  <strong class="channel-val">bharathkumar-marimuthu</strong>
+                  <span class="channel-action">View professional network &rarr;</span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Contact Message Form Column -->
+          <div class="contact-form-col">
+            <div class="glass-card form-glass-container">
+              
+              <div class="form-header-bar">
+                <h3><i class="fa-solid fa-terminal"></i> Send a Message</h3>
+                <p>Feel free to send an inquiry or message directly using the form below.</p>
+              </div>
+
+              <!-- Backend Notice Box (Explaining Formspree / EmailJS) -->
+              <div class="backend-notice-alert" role="alert">
+                <div class="notice-icon"><i class="fa-solid fa-circle-info"></i></div>
+                <div class="notice-text">
+                  <strong>Backend Integration Notice:</strong> This contact form includes complete client-side validation. To have messages routed directly to <code>bharathm123123@gmail.com</code> in production, connect this form to a backend or service such as <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> or <a href="https://www.emailjs.com" target="_blank" rel="noopener">EmailJS</a>.
+                </div>
+              </div>
+
+              <!-- Interactive Contact Form -->
+              <form id="contactForm" class="cyber-form" novalidate>
+                <div class="input-block">
+                  <label for="userName"><i class="fa-solid fa-user"></i> Your Name <span class="req">*</span></label>
+                  <input type="text" id="userName" name="userName" class="cyber-input" placeholder="e.g. John Doe" required />
+                  <span class="error-msg" id="nameError">Please enter your name.</span>
+                </div>
+
+                <div class="input-block">
+                  <label for="userEmail"><i class="fa-solid fa-envelope"></i> Your Email <span class="req">*</span></label>
+                  <input type="email" id="userEmail" name="userEmail" class="cyber-input" placeholder="e.g. johndoe@example.com" required />
+                  <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                </div>
+
+                <div class="input-block">
+                  <label for="userSubject"><i class="fa-solid fa-tag"></i> Subject</label>
+                  <input type="text" id="userSubject" name="userSubject" class="cyber-input" placeholder="e.g. Internship Inquiry / Project Discussion" />
+                </div>
+
+                <div class="input-block">
+                  <label for="userMessage"><i class="fa-solid fa-message"></i> Message <span class="req">*</span></label>
+                  <textarea id="userMessage" name="userMessage" rows="5" class="cyber-input" placeholder="Write your message here..." required></textarea>
+                  <span class="error-msg" id="messageError">Please enter your message (at least 10 characters).</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary-glow btn-block" id="submitFormBtn">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Send Message</span>
+                </button>
+              </form>
+
+              <!-- Success Confirmation Message -->
+              <div class="form-success-card" id="formStatusBox" style="display: none;">
+                <div class="success-icon-wrap"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="success-content">
+                  <h4>Message Recorded!</h4>
+                  <p>Thank you for reaching out. In live deployment with Formspree or EmailJS, this message will be delivered to <strong>bharathm123123@gmail.com</strong>.</p>
+                  <button type="button" class="btn btn-glass-cyan btn-sm" id="resetFormBtn">Send Another Message</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== RESUME MODAL & PRINT VIEW ==================== -->
+  <div class="modal-overlay" id="resumeModal" aria-hidden="true" role="dialog" aria-labelledby="resumeTitle">
+    <div class="modal-box resume-modal-box">
+      
+      <!-- Modal Navigation Bar -->
+      <div class="modal-top-bar">
+        <div class="modal-title-wrap">
+          <h3 id="resumeTitle"><i class="fa-solid fa-file-lines"></i> Professional Resume Preview</h3>
+          <span class="modal-author">Bharathkumar M &bull; Official Student Profile</span>
+        </div>
+        <div class="modal-controls">
+          <button type="button" class="btn btn-primary-glow btn-sm" id="printResumeBtn" title="Print or Save as PDF">
+            <i class="fa-solid fa-print"></i>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button type="button" class="modal-close-icon" id="closeResumeModalBtn" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Resume Document (Optimized for ATS & PDF Output) -->
+      <div class="modal-scroll-area">
+        <div class="resume-sheet" id="printableResume">
+          
+          <header class="resume-sheet-header">
+            <div>
+              <h1 class="resume-name">BHARATHKUMAR M</h1>
+              <p class="resume-tagline">College Student &bull; Aspiring Developer</p>
+            </div>
+            <div class="resume-contact-meta">
+              <div><i class="fa-solid fa-envelope"></i> bharathm123123@gmail.com</div>
+              <div><i class="fa-solid fa-phone"></i> +91 9042573764</div>
+              <div><i class="fa-brands fa-linkedin"></i> linkedin.com/in/bharathkumar-marimuthu-516b033a7</div>
+              <div><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu, India</div>
+            </div>
+          </header>
+
+          <hr class="resume-line" />
+
+          <!-- Objective -->
+          <section class="resume-block">
+            <h2 class="resume-block-title">CAREER OBJECTIVE</h2>
+            <p class="resume-para">
+              Second-year college student at KG College of Arts and Science with a keen interest in technology, programming, and web development. 
+              Dedicated to learning new tools, enhancing problem-solving capabilities, and developing useful projects with a focus on building a strong, 
+              successful career in the IT industry.
+            </p>
+          </section>
+
+          <!-- Education -->
+          <section class="resume-block">
+            <h2 class="resume-block-title">EDUCATION</h2>
+            
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span class="school-bold">KG College of Arts and Science</span>
+                <span class="date-bold">Second Year (Currently Pursuing)</span>
+              </div>
+              <div class="dept-italic">
+                [Degree Name - e.g., B.Sc. / BCA / B.Tech] &bull; [Department - e.g., Computer Science / Information Technology]
+              </div>
+              <p class="resume-sub-para">
+                Engaged in foundational academic curriculum covering computer science principles, programming logic, and practical web applications.
+              </p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span class="school-bold">Swathanthara Higher Secondary School</span>
+                <span class="date-bold">Higher Secondary School</span>
+              </div>
+              <div class="dept-italic">
+                Location: Athipalayam, Vaiyampalayam
+              </div>
+              <p class="resume-sub-para">
+                Completed secondary and higher secondary schooling with core academic focus in sciences and mathematics.
+              </p>
+            </div>
+          </section>
+
+          <!-- Skills -->
+          <section class="resume-block">
+            <h2 class="resume-block-title">SKILLS &amp; COMPETENCIES</h2>
+            <div class="resume-two-col">
+              <div>
+                <strong>Technical Foundations:</strong>
+                <p>HTML &bull; CSS &bull; JavaScript &bull; C Programming &bull; Basic Web Development</p>
+              </div>
+              <div>
+                <strong>Core Strengths &amp; Soft Skills:</strong>
+                <p>Problem-Solving &bull; Teamwork &bull; Communication &bull; Quick Learning &bull; Adaptability</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Projects -->
+          <section class="resume-block">
+            <h2 class="resume-block-title">ACADEMIC &amp; PERSONAL PROJECTS</h2>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span class="school-bold">Digital Wallet and Balance Management System</span>
+                <span class="date-bold">[In Development / Concept]</span>
+              </div>
+              <div class="dept-italic">
+                Technologies: [To be confirmed upon implementation - e.g., HTML, CSS, JavaScript / C]
+              </div>
+              <p class="resume-sub-para">
+                A project concept for managing a digital wallet balance and tracking financial transactions.
+              </p>
+              <ul class="resume-dots">
+                <li>Designed architecture to view current wallet balance and manage account balances.</li>
+                <li>Simulated functionality to add money and credit balances securely.</li>
+                <li>Comprehensive ledger tracking for debits, credits, and historical transaction logs.</li>
+              </ul>
+            </div>
+          </section>
+
+          <footer class="resume-foot-tag">
+            Bharathkumar M &bull; Coimbatore &bull; Student Resume
+          </footer>
+
+        </div>
+      </div>
+
+      <div class="modal-bottom-bar">
+        <span class="hint-text"><i class="fa-solid fa-circle-info"></i> In the print window, select destination printer as <strong>"Save as PDF"</strong> for an instant clean PDF copy.</span>
+        <button type="button" class="btn btn-glass-cyan btn-sm" id="closeResumeBottomBtn">Close Preview</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== PROJECT DETAILS & DEMO MODAL ==================== -->
+  <div class="modal-overlay" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="projectModalTitle">
+    <div class="modal-box project-modal-box">
+      
+      <div class="modal-top-bar">
+        <div class="modal-title-wrap">
+          <h3 id="projectModalTitle"><i class="fa-solid fa-wallet"></i> Digital Wallet and Balance Management System</h3>
+          <span class="modal-author">Interactive Prototype Simulation</span>
+        </div>
+        <button type="button" class="modal-close-icon" id="closeProjectModalBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-scroll-area">
+        
+        <!-- Project Description -->
+        <div class="project-dialog-desc">
+          <h4><i class="fa-solid fa-circle-info"></i> System Description</h4>
+          <p>
+            A project concept for managing a digital wallet balance and tracking transactions. 
+            This interactive prototype illustrates how a user securely adds funds, spends balances, and tracks their transaction ledger in real-time.
+          </p>
+        </div>
+
+        <!-- Simulated Cybernetic Wallet Component -->
+        <div class="wallet-cyber-card">
+          
+          <div class="wallet-cyber-top">
+            <span class="status-live-chip"><i class="fa-solid fa-microchip"></i> Live Concept Demo</span>
+            <span class="wallet-type">Digital Wallet V1.0</span>
+          </div>
+
+          <!-- Balance Screen -->
+          <div class="balance-cyber-screen">
+            <span class="screen-label">AVAILABLE BALANCE</span>
+            <div class="screen-amount">
+              <span class="sym">₹</span>
+              <span id="demoBalance" class="num">2,500.00</span>
+            </div>
+            <span class="screen-sec"><i class="fa-solid fa-shield-halved"></i> Secured &bull; Active Ledger</span>
+          </div>
+
+          <!-- Controls -->
+          <div class="wallet-control-row">
+            <div class="input-ctrl">
+              <input type="number" id="demoAmountInput" class="cyber-input" placeholder="Amount (₹)" min="1" max="50000" value="500" />
+            </div>
+            <div class="btn-ctrl">
+              <button type="button" class="btn btn-primary-glow btn-sm" id="demoAddMoneyBtn">
+                <i class="fa-solid fa-plus"></i> Add Funds
+              </button>
+              <button type="button" class="btn btn-glass-cyan btn-sm" id="demoSpendMoneyBtn">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> Spend / Transfer
+              </button>
+            </div>
+          </div>
+
+          <!-- Live Ledger Log -->
+          <div class="ledger-table-wrap">
+            <h5 class="ledger-title"><i class="fa-solid fa-clock-rotate-left"></i> Transaction Ledger</h5>
+            <div class="table-scroll">
+              <table class="cyber-table">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Date / Time</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="transactionLogBody">
+                  <tr>
+                    <td><span class="badge-credit"><i class="fa-solid fa-arrow-down"></i> Credit</span></td>
+                    <td>Opening Balance Deposit</td>
+                    <td>Today, 10:00 AM</td>
+                    <td class="text-credit font-bold">+₹2,500.00</td>
+                    <td><span class="badge-done">Completed</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Planned Technical Architecture -->
+        <div class="architecture-specs">
+          <h4><i class="fa-solid fa-network-wired"></i> Architecture &amp; Future Scope</h4>
+          <div class="arch-grid">
+            <div class="arch-box">
+              <i class="fa-solid fa-database arch-icon"></i>
+              <h5>State Persistence</h5>
+              <p>Store transaction records securely using local database or relational schemas.</p>
+            </div>
+            <div class="arch-box">
+              <i class="fa-solid fa-lock arch-icon"></i>
+              <h5>Balance Safeguards</h5>
+              <p>Strict server-side validation to avoid overdrafts and transaction race conditions.</p>
+            </div>
+            <div class="arch-box">
+              <i class="fa-solid fa-file-invoice arch-icon"></i>
+              <h5>Statement Export</h5>
+              <p>Generate downloadable statement summaries in PDF and CSV formats.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-bottom-bar">
+        <span class="hint-text"><i class="fa-solid fa-code"></i> Editable: You can easily customize project details and tech stack inside <code>index.html</code>.</span>
+        <button type="button" class="btn btn-glass-cyan btn-sm" id="closeProjectBottomBtn">Close Prototype</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-upper">
+        <div class="footer-identity">
+          <a href="#home" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-terminal"></i></span>
+            <span class="logo-text">Bharathkumar<span class="highlight">.dev</span></span>
+          </a>
+          <p class="footer-desc">
+            Second-year student at KG College of Arts and Science. Exploring computer software engineering, modern web technologies, and scalable programming.
+          </p>
+        </div>
+
+        <div class="footer-nav-columns">
+          <div class="f-col">
+            <h4 class="f-col-title">Navigation</h4>
+            <ul class="f-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="f-col">
+            <h4 class="f-col-title">Connect</h4>
+            <ul class="f-links">
+              <li>
+                <a href="https://www.linkedin.com/in/bharathkumar-marimuthu-516b033a7/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="mailto:bharathm123123@gmail.com">
+                  <i class="fa-solid fa-envelope"></i> Email
+                </a>
+              </li>
+              <li>
+                <a href="tel:9042573764">
+                  <i class="fa-solid fa-phone"></i> +91 9042573764
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+
+      <div class="footer-lower">
+        <p class="copyright-text">
+          &copy; <span id="currentYear"></span> Bharathkumar M. Built with HTML, CSS &amp; JavaScript.
+        </p>
+        <a href="#home" class="scroll-top-link" id="backToTopLink">
+          Back to Top <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" class="floating-top-btn" id="scrollTopBtn" aria-label="Scroll to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Interactive Toast Notification Container -->
+  <div class="toast-hub" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

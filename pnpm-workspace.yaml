@@ -1,0 +1,5 @@
+pnpm:
+  allowedDeprecatedVersions:
+    three-mesh-bvh: "*"
+  onlyBuiltDependencies:
+    - esbuild
